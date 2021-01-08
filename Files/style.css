@@ -1,0 +1,33 @@
+#wrapper{
+  background-color:grey;
+  background-image:url("wolfpack.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  padding:10px;
+  margin: -7px;
+  border-radius: 10px;
+}
+#leftColumn{background-color: black;
+  opacity:0.8;
+border-radius: 20px;
+width:550px;
+padding:50px;
+float:left;
+}
+
+
+
+#rightColumn{
+opacity:0.8;
+background-color: black;
+border-radius: 20px;
+width:550px;
+float:right;
+padding:50px;
+}
+
+h1{color:green; font-family:monospace;}
+h2{color:green; font-family:monospace;}
+h3{color:green; font-family:monospace;}
+a{color:white; font-family:"Courier New", Courier, monospace; font-weight:normal; font-size:20px;}

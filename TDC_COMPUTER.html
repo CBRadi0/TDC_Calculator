@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<head>
+
+<link href='Files/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div id="wrapper">
+  <div id='leftColumn'>
+    <h1>Torpedo Data Computer</h1>
+    <div id="length_Shell">
+          <h2 id="length_heading">Length of Ship</h2>
+          <input type=number id='length' placeholder="Ships Length"/>
+    </div>
+    <div id="height_Shell">
+          <h2 id="height_heading">Height of Ship</h2>
+          <input type=number id='height' placeholder="Ships Height"/>
+          <input type=number id='height_Cent' placeholder="Height in Centiradians"/>
+    </div>
+    <div id="zoom_Shell">
+          <h2 id="zoom_heading">Zoom Level</h2>
+          <select id="zoom" placeholder='Zoom Level'>
+            <option value="1">Standard Zoom</option>
+            <option value="4">x4 Zoom</option>
+          </select>
+    </div>
+
+    <div id="speed_Shell">
+          <h2 id="speed_heading">Time taken to Pass</h2>
+          <input type=number id='speed' placeholder="In Seconds"/>
+    </div>
+    <div id="aob_shell">
+          <h2 id="aob_heading">Angle on Bow</h2><button id='helpAob' style="color:blue">AOB Help</button>
+          <input type=number id='aob' placeholder="Rel heading to bow"/>
+
+    </div>
+    <h2>----------------------------------- </h2>
+    <button id='calculate'>Calculate Now</button>
+  </div>
+  <div id='centreColumn'></div>
+  <div id="rightColumn">
+    <h1>Results</h1>
+    <h2>Range: <a id='resultRange'></a></h2>
+    <h2>Speed: <a id='resultSpeed'></a></h2>
+    <h2>AOB:  &nbsp; <a id='resultAOB'></a></h2>
+  </div>
+
+</div>
+</body>
+
+<script>
+let speed, length, height, aob, zoom;
+
+let calc = function(){
+  console.log('----------------------------------');
+console.log(Math.round(((document.getElementById('length').value / document.getElementById('speed').value)) * 1.94 * 100) / 100 + " Knots");
+console.log(Math.round(((document.getElementById('height').value / document.getElementById('height_Cent').value)*document.getElementById('zoom').value) * 100) / 100 + ' Hectometers');
+document.getElementById('resultRange').textContent = Math.round(((document.getElementById('height').value / document.getElementById('height_Cent').value)*document.getElementById('zoom').value) * 100) / 100 + ' Hectometers';
+document.getElementById('resultSpeed').textContent = Math.round(((document.getElementById('length').value / document.getElementById('speed').value)) * 1.94 * 100) / 100 + " Knots";
+let aob = document.getElementById('aob');
+if(aob.value <= 180){console.log(180-aob.value + ' degrees AOB');document.getElementById('resultAOB').textContent = 180-aob.value + ' degrees AOB' ;}else{console.log((180-aob.value)*-1 + ' degrees AOB');document.getElementById('resultAOB').textContent =(180-aob.value)*-1 + ' degrees AOB';}
+}
+
+let calculate= document.getElementById('calculate').addEventListener('click',calc);
+let helpAob= document.getElementById('helpAob').addEventListener('click',function(){
+  alert("Travelling Parallel and same direction to the enemy ship enter the angle to the bow of the enemy ship using the Attack Periscope");
+});
+</script>
