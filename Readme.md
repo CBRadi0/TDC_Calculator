@@ -10,17 +10,4 @@ The Angle on Bow function is a bit funky it works, you just have to use it in th
 4. It will not give you Port or Starboard you will have to manually set.
 
 Happy Hunting
-
-                                    |__
-                                    |\/
-                                    ---
-                                    / | [
-                             !      | |||
-                           _/|     _/|-++'
-                       +  +--|    |--|--|_ |-
-                    { /|__|  |/\__|  |--- |||__/
-                   +---------------___[}-_===_.'____               /\
-               ____`-' ||___-{]_| _[}-  |     |_[___\==--          \/     _
- __..._____--==/___]_|__|_____________________________[___\==--___,-----' .7
-|                                                                   BB-61/
- \_______________________________________________________________________|
+BlackBeard
