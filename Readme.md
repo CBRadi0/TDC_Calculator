@@ -1,6 +1,6 @@
 Run the TDC_COMPUTER.html file to get started.
 
-WARNING Do Not Alter the files within the files folder
+WARNING: Do Not Alter the files within the files folder
 
 The Angle on Bow function is a bit funky it works, you just have to use it in the specified manner.
 
@@ -9,5 +9,5 @@ The Angle on Bow function is a bit funky it works, you just have to use it in th
 3. Input that data into the Angle on Bow section of the calculator.
 4. It will not give you Port or Starboard you will have to manually set.
 
-Happy Hunting
+Happy Hunting,
 BlackBeard
