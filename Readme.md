@@ -1,6 +1,6 @@
 Run the TDC_COMPUTER.html file to get started.
 
-WARNING: Do Not Alter the files within the files folder
+WARNING: Do Not Alter the files within the files folder or change the folder name.
 
 The Angle on Bow function is a bit funky. It does work, you just have to use it in the specified manner.
 
